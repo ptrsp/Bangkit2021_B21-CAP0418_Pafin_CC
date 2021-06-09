@@ -117,7 +117,9 @@ gcloud run deploy --image gcr.io/Your_ProjectID/restapi --platform managed --add
 
 ## Upload ML Model to cloud
 Open powershell in GCP,ensure that cloud shell connect into your account and project
-Clone this repository git clone https://github.com/ptrsp/Bangkit2021_B21-CAP0418_Pafin_CC.git
+Clone this repository git clone ``` https://github.com/ptrsp/Bangkit2021_B21-CAP0418_Pafin_CC.git ```
+```bash
 gsutil cp tokenizer.pickle gs://[project-id]-bucket
 gsutil cp variables.data-00000-of-00001 gs://[project-id]-bucket
 gsutil cp variables.index gs://[project-id]-bucket
+```
